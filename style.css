@@ -1,62 +1,60 @@
-/* menu style */
 *, body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-.topnav {
-    overflow: hidden;
-    background-color: #02254B;
+
+.main-container {
+  position: relative;
+}
+
+/* menu style */
+.menu-block {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: #02254B;
+  justify-content: space-between;
+  overflow: hidden;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+  color: white;
+  font-size: 18px;
+}
+
+.menu-item:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+.hidden {
+  display: none
+}
+
+@media screen and (max-width : 1095px) {
+  .hidden {
+    display: flex;
   }
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .active {
-    background-color: #ddd;
-    color: black!important;
-  }
-  
-  .topnav .icon {
-    display: none;
-  }
-  
-  @media screen and (max-width: 1065px) {
-    /* .topnav a:not(:first-child) {display: none;} */
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 1065px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
+}
 
   /* ---------------------------- */
-
+  .main {
+    padding-top: 50px;
+  }
   .container-block {
     will-change: transform; 
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);    
@@ -64,7 +62,7 @@
   }
 
   .container-block {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
   }
 
@@ -145,8 +143,6 @@
 }
 
 .item-2 {
-  padding-top: 50px;
-  padding-bottom: 50px;
   font-size: 1.4vw;
 }
 
@@ -208,7 +204,7 @@ ul li, .txt ol li {
 
 .item-3-title {
   text-align: center;
-  color: rgb(117, 0, 64);
+  color: rgb(251, 255, 0);
 }
 
 .i3-bg-txt {
@@ -243,8 +239,6 @@ ul li, .txt ol li {
 
 /* block 4 style */
 .item-4 {
-  padding-top: 50px;
-  padding-bottom: 50px;
   text-align: center;
   background-color: rgb(240, 240, 240);
 }
@@ -354,7 +348,124 @@ ul li, .txt ol li {
   font-size: 2.5vw;
 }
 
-/* animtaion style */
+/* block 8 style */
+.item-8 {
+  background-image: url(http://school-ball.com/sball/static/mainweb/images/main/body_bg.jpg);
+  background-size: cover;
+  background-position: top center;
+  color: white;
+}
+
+.item-8 > h2 {
+  text-align: center;
+  font-size: 3vw;
+}
+
+.number-block {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.number-block p {
+  border: 1px dotted white;
+  padding: 15px;
+  font-size: 1.5vw;
+  color: rgb(226, 226, 226);
+}
+
+.bold-num {
+  font-weight: bold;
+  font-style: normal;
+  padding-right: 10px;
+  color: white;
+}
+
+.p-block {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+.p-block > p {
+  width: 45%;
+  padding: 15px;
+  text-align: center;
+  will-change: transform; 
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);  
+  margin-bottom: 20px;
+  font-size: 1.5vw;
+}
+
+.p-item-1 {
+    background-image: linear-gradient(45deg, rgb(0, 78, 138) 0%, rgb(0, 175, 173) 100%); 
+}
+
+.p-item-2 {
+    background-image: linear-gradient(45deg, rgb(218, 117, 79) 0%, rgb(83, 120, 242) 100%);  
+}
+
+.p-item-3 {
+    background-image: linear-gradient(45deg, rgb(100, 0, 86) 0%, rgb(41, 69, 148) 100%); 
+}
+
+.p-item-4 {
+    background-image: linear-gradient(45deg, rgb(0, 112, 60) 0%, rgb(67, 150, 57) 100%); 
+}
+
+.footer-block {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.contact-block {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 30px;
+}
+
+.contact-block p {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.contact-block a {
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(162, 162, 255);
+}
+
+.contact-block a:hover {
+  text-decoration: none;
+  color: rgb(97, 97, 255);
+}
+
+.btn-txt-block {
+  margin: 0 auto;
+}
+
+.btn-txt-block h2 {
+  font-size: 1.3vw;
+  color: rgb(255, 255, 65);
+  padding: 15px;
+}
+
+.block-link {
+  display: block;
+  text-decoration: none;
+}
+
+.block-link:hover {
+  text-decoration: none;
+}
+
+.contact-icons {
+  margin-top: 10px;
+}
 
 
 
