@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <script src="jquery.js"></script>
     <title>Франшиза</title>
 </head>
 
@@ -19,7 +20,7 @@
                 <a href="#" class="menu-item">Этапы запуска франшизы</a>
                 <a href="#" class="menu-item">Варианты сотрудничества</a>
                 <a href="#" class="menu-item">Отзывы франчайзи</a>
-                <a href="#" class="menu-item">Презентация</a>
+                <a href="#presentation" class="menu-item">Презентация</a>
             </div>
             <a href="javascript:void(0);" class="icon menu-item hidden" onclick="showMenuItems()">
                 <i class="fa fa-bars"></i>
@@ -28,7 +29,7 @@
         <main>
             <!-- block 1-->
             <div class="container-block item-1">
-                <div class="logo-block">
+                <!-- <div class="logo-block">
                     <img class="logo" src="http://school-ball.com/sball/static/mainweb/images/png/logo_small.png"
                         alt="" />
                     <h1 class="logo-text">Школа мяча</h1>
@@ -46,12 +47,35 @@
                     <div class="btn-block">
                         <button class="y-btn">Открыть свой бизнес </button>
                     </div>
+                </div> -->
+                <div class="main-inner">
+                    <div class="logo-block">
+                        <img class="logo" src="http://school-ball.com/sball/static/mainweb/images/png/logo_small.png"
+                            alt="" />
+                    </div>
+                    <div class="bg-txt">
+                        <h2>Федеральная сеть футбольных клубов для детей 3-14 лет!</h2>
+                        <p class="main-content">Франшиза «Школы мяча» это открытие Вами «футбольного клуба» для детей 3-14 лет (от 1 шт.) с
+                            помощью
+                            нашей эффективной команды.</p>
+                        <div class="btn-block">
+                            <button class="y-btn">Открыть свой бизнес </button>
+                        </div>
+                    </div>
                 </div>
+                <div class="item1-inner">
+
+                </div>
+                <script>
+                    const innerHeight = $('.main-inner').height();
+                    $('.item-1').css({ height: innerHeight });
+                    $('.item1-inner').css({ height: innerHeight });
+                </script>
             </div>
 
             <!--block 2-->
             <div class="container-block item-2">
-                <p class="center-txt">Выбрать франшизу «Школы мяча:</p>
+                <p class="center-txt">Выбрать франшизу "Школы мяча":</p>
                 <div class="inner-block item-2-inner-block">
                     <div class="inner-item">
                         <h3>Выгодно</h3>
@@ -60,17 +84,19 @@
                                 <ul>
                                     <li>Инвестиции: от 390 000р. (суммарно)</li>
                                     <li>Окупаемость 3-9 месяцев.</li>
-                                    <li>Операционная прибыль с 1-го месяца (проверь эту информацию у наших франчайзи))
+                                    <li>Операционная прибыль с 1-го месяца. Мы честны с партнёрами: начинаем в самый нужный момент начала сезона.
                                     </li>
                                     <li>Вложил 1 рубль, подучи 3р. (за сезон) </li>
+                                    <li>Доходность. Просчитаем вместе с Вами на персональной встрече</li>
                                 </ul>
                             </div>
-                            <img src="" alt="" />
+                            <img src="img/img1.png" alt="" />
                         </div>
                     </div>
                     <div class="inner-item">
                         <h3>Перспективно</h3>
                         <div class="block-item">
+                            <img src="img/img4.png" alt="" />
                             <div class="txt">
                                 <p class="italic-p">Рынок детских услуг:</p>
                                 <ul>
@@ -78,7 +104,6 @@
                                     <li>Быстро развивающийся.</li>
                                 </ul>
                             </div>
-                            <img src="" alt="" />
                         </div>
                     </div>
                     <div class="inner-item">
@@ -89,10 +114,10 @@
                                     <li>100% франчайзи открылись и зарабатывают с нами.</li>
                                 </ul>
                             </div>
-                            <img src="" alt="" />
+                            <img src="img/img2.png" alt="" />
                         </div>
                     </div>
-                    <div class="inner-item">
+                    <!-- <div class="inner-item">
                         <h3 class="pad-0">Социально ответственно </h3>
                         <div class="block-item">
                             <div class="txt">
@@ -102,7 +127,7 @@
                             </div>
                             <img src="" alt="" />
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="btn-block">
                     <button class="y-btn">Получить консультацию</button>
@@ -112,21 +137,18 @@
             <!--block 3-->
             <div class="container-block item-3">
                 <div class="item-3-title">
-                    <h1 class="i3-bg-txt">Профессионально</h1>
+                    <h1 class="i3-bg-txt">Мы - профессионалы</h1>
                     <p class="i3-sm-txt">Наш продукт – футбольный МИР для детей</p>
+                    <p class="i3-sm-txt">Школа мяча - первая сеть частных детских клубов с 2007 г.</p>
                 </div>
                 <div class="item-3-txt">
-                    <p>Мы на рынке с 2007 года. Мы первая сеть частных детских футбольных клубов.</p>
                     <ul>
-                        <li><span class="bold-li">Прекрасно представляем конъюнктуру рынка футбольного детского
-                                спорта:</span>
+                        <li><span class="bold-li">У нас есть чёткое представление о конъюнктуре детского футбольного спорта</span>
                             <ul class="l-g-flush" type="none">
                                 <li class="l-g-item">Опыт создания Детско-Юношеской Спортивной Школы с «0».</li>
-                                <li class="l-g-item">Опыт создания команды ЛФК с «0». 1-я ступень взрослого
-                                    профессионального футбола в России.</li>
-                                <li class="l-g-item">Опыт футбольного воспитание детей и подписание их в ТОП 5
+                                <li class="l-g-item">Практика футбольного воспитания детей и подписание их в ТОП 5
                                     Российских клубов.</li>
-                                <li class="l-g-item">Ежедневно создаём атмосферу азарта / развития навыков / ярких
+                                <li class="l-g-item">Ежедневная работа над созданием атмосферы азарта / развития навыков / ярких
                                     эмоций для ВСЕХ наших детей</li>
                             </ul>
                         </li>
@@ -136,15 +158,14 @@
                                     накопили
                                     солидный собственный опыт.</li>
                                 <li class="l-g-item">В итоге мы разработали собственную методику обучения, доказавшую
-                                    свою
-                                    эффективность.</li>
+                                    свою эффективность.</li>
                                 <li class="l-g-item">Максимум внимания мы уделили технике / психологии и мотивации наших
                                     юных спортсменов.</li>
                             </ul>
                         </li>
                         <li><span class="bold-li">Тренерский состав</span>
                             <ul class="l-g-flush" type="none">
-                                <li class="l-g-item">Мы знаем – тренер это основа нашего дела.</li>
+                                <li class="l-g-item">Мы знаем – профессиональный тренер это основа нашего дела.</li>
                                 <li class="l-g-item">Обучение / поддержка и возможность карьерного роста наших тренеров
                                     –
                                     залог стабильности и качества нашего с Вами продукта. </li>
@@ -152,10 +173,10 @@
                         </li>
                         <li><span class="bold-li">Инструменты ведения бизнеса.</span>
                             <ul class="l-g-flush" type="none">
-                                <li class="l-g-item">Мы видели/тестировали и создавали множество инструментов управления
+                                <li class="l-g-item">Мы видели и создавали множество инструментов управления
                                     бизнесом.</li>
                                 <li class="l-g-item">На сегодняшний день мы с уверенностью заявляем: </li>
-                                <li class="l-g-item">Мы подготовили для Вас лучшие и самые эффективные рабочие
+                                <li class="l-g-item">Мы подготовили для своих партнёров лучшие и самые эффективные рабочие
                                     инструменты:
                                     <p>- Рекламный пакет</p>
                                     <p>- Автоматизированная система управления бизнеса = всё в одном месте, от 1-го
@@ -167,15 +188,15 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><span class="bold-li">Франчайзи (Вы) для нас – наш долгосрочный партнёр, который хочет
+                        <li><span class="bold-li">Франчайзи (Вы) для нас – наш постоянный партнёр, который хочет
                                 предлагать качественный
                                 продукт, делать это с командой профессионалов, просто и с выгодой.</span>
                             <ul class="l-g-flush" type="none">
-                                <li class="l-g-item">В нашей команде нет шаблонных подходов. Всё взаимодействие строится
+                                <li class="l-g-item special-item-top">В нашей команде нет шаблонных подходов. Всё взаимодействие строится
                                     на
                                     индивидуальных особенностях каждого партнёра (компетенции/опыта/знания рынка/целей).
                                 </li>
-                                <li class="l-g-item">Вы обучитесь всем необходимым навыкам и быстро окупите свои
+                                <li class="l-g-item special-item-bottom">Вы обучитесь всем необходимым навыкам и быстро окупите свои
                                     вложения.
                                 </li>
                             </ul>
@@ -183,7 +204,7 @@
                     </ul>
                 </div>
                 <div class="btn-block">
-                    <button class="y-btn">Получи пошаговый план открытия франшизы</button>
+                    <button class="y-btn">Получите пошаговый план открытия франшизы</button>
                 </div>
             </div>
 
@@ -192,28 +213,28 @@
                 <h1>Как начать зарабатывать вместе с нами?</h1>
                 <div class="inner-item-4">
                     <div class="parallelogram">
-                        <p class="you-do">Оставь координаты/позвони </p>
+                        <p class="you-do">Оставьте координаты/позвоните </p>
                         <p class="we-do">Проконсультируем</p>
                     </div>
                     <div class="arrow-block">
                         <img src="img/arrow.png" class="item-arrow" />
                     </div>
                     <div class="parallelogram">
-                        <p class="you-do">Приди на встречу </p>
+                        <p class="you-do">Придите на встречу </p>
                         <p class="we-do">Выберем персональные решения для сотрудничества</p>
                     </div>
                     <div class="arrow-block">
                         <img src="img/arrow.png" class="item-arrow" />
                     </div>
                     <div class="parallelogram">
-                        <p class="you-do">Подпиши договор</p>
+                        <p class="you-do">Подпишите договор</p>
                         <p class="we-do">Зафиксируем идеальные условий</p>
                     </div>
                     <div class="arrow-block">
                         <img src="img/arrow.png" class="item-arrow" />
                     </div>
                     <div class="parallelogram">
-                        <p class="you-do">Пройди обучение</p>
+                        <p class="you-do">Пройдите обучение</p>
                         <p class="we-do">Передадим знания и подготовимся к открытию</p>
                     </div>
                     <div class="arrow-block">
@@ -221,13 +242,13 @@
                     </div>
                     <div class="parallelogram">
                         <p class="you-do">Запуск</p>
-                        <p class="we-do">Поздравляем! Ты в команде</p>
+                        <p class="we-do">Поздравляем! Вы в команде</p>
                     </div>
                     <div class="arrow-block">
                         <img src="img/arrow.png" class="item-arrow" />
                     </div>
                     <div class="parallelogram">
-                        <p class="you-do">Развивай успех</p>
+                        <p class="you-do">Развивайте успех</p>
                         <p class="we-do">Поддержим! Мы постоянно «на связи» и помогаем делать продукт лучше день ото
                             дня.</p>
                     </div>
@@ -250,7 +271,7 @@
                     </a>
                 </div>
                 <div class="btn-block">
-                    <button class="y-btn">Закажи индивидуальный расчёт по твоим критериям</button>
+                    <button class="y-btn">Закажите индивидуальный расчёт по вашим критериям</button>
                 </div>
             </div>
 
@@ -283,6 +304,47 @@
                 </div>
                 <div class="btn-block">
                     <button class="y-btn">Получить консультацию</button>
+                </div>
+            </div>
+
+            <!-- block 7-->
+            <div class="container-block item-7">
+                <div class="item7-txt">
+                    <p>Спорт неотъемлемая часть жизни любого человека.</p>
+                    <p>Важность спорта для детского развития невозможно переоценить.</p>
+                    <p>Футбол – самый популярный вид спорта.</p>
+                    <p>Мы вместе делаем футбол доступным для каждого!</p>
+                </div>
+                <div class="video-slider">
+                    <h3>Отзывы наших франчайзи</h3>
+                    <div class="slider-block">
+                        <div class="video-item">
+                            <div class="resp-container">
+                                <iframe src="https://www.youtube.com/embed/imaUDFbQzOs" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen class="resp-iframe"></iframe>
+                            </div>
+                        </div>
+                        <div class="video-item">
+                            <div class="resp-container">
+                                <iframe src="https://www.youtube.com/embed/lfrD9Tx3PGk" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen class="resp-iframe"></iframe>
+                            </div>
+                        </div>
+                        <div class="video-item">
+                            <div class="resp-container">
+                                <iframe src="https://www.youtube.com/embed/y7P2eqjrDL4" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen class="resp-iframe"></iframe>
+                            </div>
+                        </div>
+                        <div class="arrow-left arrows"></div>
+                        <div class="arrow-right arrows"></div>
+                    </div>
+                </div>
+                <div class="btn-block">
+                    <button class="y-btn">Станьте первым в своём городе/районе</button>
                 </div>
             </div>
 
@@ -330,7 +392,7 @@
                 </div>
             </div>
             <!--block 9 Презентация-->
-            <div class="container-block item-9">
+            <div class="container-block item-9" id="presentation">
                 <h1 class="title">Школа мяча</h1>
                 <h3 class="sm-title">Этапы открытия своего клуба с нашей командой</h3>
                 <div class="inner-item-9">
@@ -403,7 +465,7 @@
             </div>
         </main>
     </div>
-    <script src="jquery.js"></script>
+    <!-- <script src="jquery.js"></script> -->
     <script src="script.js"></script>
 </body>
 

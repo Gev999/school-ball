@@ -68,31 +68,86 @@
 
   /* block 1 style */
 
-.item-1 {
-    /* background-image: url(img/first-back.jpg); */
-    background-image: linear-gradient(45deg, rgb(3, 35, 75) 0%, rgb(19, 77, 165) 100%); 
+/* .item-1 {
+    background-image: url(img/back-1.jpg);
+    /* background-image: linear-gradient(45deg, rgb(3, 35, 75) 0%, rgb(19, 77, 165) 100%); 
     background-size: cover;
     background-position: top center;
     color: white;
     padding-top: 15px;
     padding-bottom: 15px;
+} */
+
+.item-1 {
+  padding: 0!important;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-image: url(img/back-1.jpg);
+    /* background-image: linear-gradient(45deg, rgb(3, 35, 75) 0%, rgb(19, 77, 165) 100%);  */
+    background-size: cover;
+    background-position: top center;
+    color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-inner {
+  width: 60%;
+  z-index: 999;
+}
+
+.item1-inner {
+  /* background-color: #ddd; */
+  width: 100%;
+  /* height: 50vh; */
+  background-color: rgba(209, 209, 209, 0.705);
+  -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+    position:absolute;
+    top: 0;
+    left: 45%;
 }
 
 .logo-block {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.logo-block h1 {
-  font-size: 4vw!important;
-}
-
-.logo {
-  width: 10%;
+    padding-left: 15%;
 }
 
 .bg-txt {
+  /* width: 90%;
+  margin: 0 auto; */
+  padding-left: 15%; 
+  padding-right: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: rgb(251, 255, 0);
+}
+
+.main-content {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  margin-top: 15px;
+}
+
+/* .logo-block h1 {
+  font-size: 4vw!important;
+} */
+
+.logo {
+  width: 25%;
+}
+
+/* .bg-txt {
   width: 70%;
   text-align: center;
   margin: 0 auto;
@@ -114,7 +169,7 @@
   margin: 0 auto;
   width: 80%;
   padding: 3%;
-}
+} */
 
 .btn-block {
   display: flex!important;
@@ -154,15 +209,15 @@
 }
 
 .item-2-inner-block {
-  width: 85%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;;
+  padding-left: 10%;
 }
 
 .inner-item {
-  width: 45%;
+  width: 55%;
   margin-bottom: 50px;
 }
 
@@ -174,6 +229,7 @@
 .block-item img {
   width: 20%;
   margin-left: 30px;
+  margin-right: 50px;
 }
 
 .inner-item h3 {
@@ -223,8 +279,28 @@ ul li, .txt ol li {
   color: white;
 }
 
+.item-3-txt > ul > li {
+  border-bottom: 5px dotted rgb(6, 0, 94);
+  padding: 30px 15px;
+  background-color: rgba(2, 37, 75, 0.363);
+  border-top: 5px dotted rgb(6, 0, 94);
+  margin-bottom: 30px;
+}
+
 .item-3-txt > p {
+  text-align: center;
   padding-bottom: 30px;
+}
+
+.special-item-top {
+  border-top: 3px solid rgb(252, 248, 7);
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.special-item-bottom {
+  border-bottom: 3px solid rgb(252, 248, 7);
+  padding-bottom: 10px;
 }
 
 .l-g-flush {
@@ -241,6 +317,9 @@ ul li, .txt ol li {
 .item-4 {
   text-align: center;
   background-color: rgb(240, 240, 240);
+  background-image: url(img/back-2.jpg);
+  background-size: cover;
+  background-position: top center;
 }
 
 .item-4 > h1 {
@@ -288,6 +367,12 @@ ul li, .txt ol li {
 }
 
 /* block 5 style */
+/* .item-5 {
+  background-image: url(img/back-3.jpg);
+  background-size: cover;
+  background-position: 0%;
+} */
+
 .item-5-inner {
   width: 50%;
   margin: 0 auto;
@@ -342,6 +427,10 @@ ul li, .txt ol li {
   margin: 10px 15px;
 }
 
+.inner-item6 h3 {
+  text-align: center;
+}
+
 .video-block h3 {
   text-align: center;
   padding-top: 5%;
@@ -364,6 +453,80 @@ ul li, .txt ol li {
   width: 100%;
   height: 90%;
   border: 0;
+}
+
+/* block 7 style */
+.item7-txt {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 2vw;
+  color: white;
+}
+
+.item-7 {
+  background-image: url(img/back-3.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.item7-txt > p {
+  border-bottom: 2px dashed rgb(177, 0, 109);
+  padding: 15px 0; 
+}
+
+.video-slider {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(221, 221, 221, 0.795);
+  margin-top: 30px;
+  border-radius: 30px;
+}
+
+.video-slider h3 {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.slider-block {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden; 
+  position: relative;
+}
+
+.video-item {
+  min-width: 100%;
+  max-width: 100%;
+  padding-top: 30px;
+  /* -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; */
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 30px;
+  height: 30px;
+  border-left: 3px solid rgb(56, 56, 56);
+  border-top: 3px solid rgb(56, 56, 56);;
+  transform: rotate(-45deg);
+  transition: .2s;
+  cursor: pointer;
+}
+.arrow-left:hover , .arrow-right:hover {
+  width: 35px;
+  height: 35px;
+  transition: .2s;
+}
+.arrow-right {
+  left: 92%;
+  transform: rotate(135deg);
 }
 
 /* block 8 style */
@@ -551,7 +714,7 @@ ul li, .txt ol li {
 
 @media screen and (max-width:924px) {
   /* block 1*/
-  .logo-block .logo {
+  /* .logo-block .logo {
     width: 15%;
   }
   .item-1 .bg-txt h3{
@@ -562,7 +725,7 @@ ul li, .txt ol li {
   }
   .item-1 .sm-txt {
     font-size: 1.8vw;
-  }
+  } */
 
   /*block 2*/
   .item-2 > p {
@@ -655,7 +818,7 @@ ul li, .txt ol li {
 @media screen and (max-width: 654px) {
 
   /* block 1*/
-  .logo-block .logo-text {
+  /* .logo-block .logo-text {
     font-size: 5vw!important;
   }
   .item-1 .bg-txt h3{
@@ -666,7 +829,7 @@ ul li, .txt ol li {
   }
   .item-1 .sm-txt {
     font-size: 2.5vw;
-  }
+  } */
 
   /*block 2*/
   .item-2 > p {
@@ -760,7 +923,7 @@ ul li, .txt ol li {
 @media screen and (max-width: 484px) {
 
   /* block 1*/
-  .logo-block .logo-text {
+  /* .logo-block .logo-text {
     font-size: 6vw!important;
   }
   .item-1 .bg-txt h3{
@@ -771,7 +934,7 @@ ul li, .txt ol li {
   }
   .item-1 .sm-txt {
     font-size: 3.5vw;
-  }
+  } */
 
   /*block 2*/
   .item-2-inner-block {
@@ -891,6 +1054,8 @@ ul li, .txt ol li {
     margin-top: 0;
   }
 }
+
+/*----------------------------*/
 
 
 
